@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import './App.css';
+import './styles/materialize-grid.css';
 
 import SideNav from './SideNav';
 
