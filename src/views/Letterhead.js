@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardTitle, CardActions, CardMedia } from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+import LetterheadCard from '../components/LetterheadCard';
 class Letterhead extends Component {
   state = {};
   render() {
@@ -19,52 +18,26 @@ class Letterhead extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col s12 m6">
-            <Card>
-              <CardMedia>
-                <img src="https://unsplash.it/500/500/?random" alt="" />
-              </CardMedia>
-              <CardTitle title="Card title" subtitle="Card subtitle" />
-              <CardActions>
-                <FlatButton label="Action1" />
-              </CardActions>
-            </Card>
-          </div>
-          <div className="col s12 m6">
-            <Card>
-              <CardMedia>
-                <img src="https://unsplash.it/500/500/?random" alt="" />
-              </CardMedia>
-              <CardTitle title="Card title" subtitle="Card subtitle" />
-              <CardActions>
-                <FlatButton label="Action1" />
-              </CardActions>
-            </Card>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col s12 m6">
-            <Card>
-              <CardMedia>
-                <img src="https://unsplash.it/500/500/?random" alt="" />
-              </CardMedia>
-              <CardTitle title="Card title" subtitle="Card subtitle" />
-              <CardActions>
-                <FlatButton label="Action1" />
-              </CardActions>
-            </Card>
-          </div>
-          <div className="col s12 m6">
-            <Card>
-              <CardMedia>
-                <img src="https://unsplash.it/500/500/?random" alt="" />
-              </CardMedia>
-              <CardTitle title="Card title" subtitle="Card subtitle" />
-              <CardActions>
-                <FlatButton label="Action1" />
-              </CardActions>
-            </Card>
-          </div>
+          <LetterheadCard
+            title="Card title"
+            action="Action 1"
+            image="https://unsplash.it/600/776/?random=1"
+          />
+          <LetterheadCard
+            title="Card title"
+            action="Action 1"
+            image="https://unsplash.it/600/776/?random=2"
+          />
+          <LetterheadCard
+            title="Card title"
+            action="Action 1"
+            image="https://unsplash.it/500/776/?random=3"
+          />
+          <LetterheadCard
+            title="Card title"
+            action="Action 1"
+            image="https://unsplash.it/600/776/?random=4"
+          />
         </div>
       </div>
     );

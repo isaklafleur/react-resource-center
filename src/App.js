@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import './App.css';
+import './styles/App.css';
 import './styles/materialize-grid.css';
 
-import SideNav from './SideNav';
+import SideNav from './components/SideNav';
 
 /* Material-UI */
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -27,13 +27,6 @@ import NotFound from './views/NotFound';
 injectTapEventPlugin();
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { open: false };
-  }
-  handleClose = () => this.setState({ open: false });
-  handleToggle = () => this.setState({ open: !this.state.open });
-
   render() {
     return (
       <BrowserRouter>

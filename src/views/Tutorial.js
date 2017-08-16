@@ -1,10 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Tutorial extends Component {
-  state = {};
-  render() {
-    return <h1>Tutorial</h1>;
-  }
-}
+const Tutorial = () => {
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col s12" />
+        <h1>Hello from Tutorial</h1>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/A3Bl8VECdLo"
+          frameborder="0"
+          allowfullscreen
+        />
+      </div>
+    </div>
+  );
+};
 
 export default Tutorial;
