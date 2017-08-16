@@ -70,17 +70,11 @@ class ServiceRequest extends Component {
   };
   handleFormData = () => {
     const data = new FormData();
-    for (const [key, val] of Object.entries(this.state)) {
-      data.append(key, val);
-    }
-    for (const [file] of this.uploadInput.files) {
-      data.append('file', file);
-    }
-    fetch('/uploads', { method: 'POST', body: data }).then(response => {
+    for (const [key, val] of Object.entries(this.state)) data.append(key, val);
+    for (const file of this.uploadInput.files) data.append('file', file);
+    fetch('/uploads', { method: 'post', body: data }).then(response => {
       console.log(response);
     });
-
-    console.log(this.uploadInput.files);
   };
 
   render() {

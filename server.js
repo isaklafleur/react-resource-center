@@ -9,7 +9,7 @@ const uploadDir = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir);
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.post('uploads', (req, res) => {
+app.post('/uploads', (req, res) => {
   const form = new formidable.IncomingForm();
 
   form.parse(req);
@@ -20,7 +20,7 @@ app.post('uploads', (req, res) => {
   form.on('file', (name, file) => {
     console.log('Uploaded ' + file.name);
   });
-  // res.sendFile(__dirname + '/index.html');
+  res.status(200).json({ success: true, status: 'Form successfully submitted' });
 });
 
 app.get('/*', (req, res) => {
