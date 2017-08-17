@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dotenv": "^4.0.0",
     "express": "^4.15.4",
     "formidable": "^1.1.1",
     "material-ui": "^0.18.7",
@@ -13,16 +14,21 @@
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.11",
-    "react-tap-event-plugin": "^2.0.1"
+    "react-tap-event-plugin": "^2.0.1",
+    "sendgrid": "^5.2.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start-react": "react-scripts start",
+    "start-server": "nodemon server.js -w server.js",
+    "start": "npm-run-all -p start-react start-server",
     "server": "nodemon server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "nightmare": "^2.10.0"
+    "cross-env": "^5.0.5",
+    "nightmare": "^2.10.0",
+    "npm-run-all": "^4.0.2"
   }
 }
