@@ -1,30 +1,35 @@
 .file-field {
-  position: relative; }
+  position: relative;
+}
 
 .input-field {
   position: relative;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 .file-field .btn,
 .file-field .btn-large {
   float: left;
   height: 3rem;
-  line-height: 3rem; }
+  line-height: 3rem;
+}
 
 .btn,
 .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #21412a;
+  background-color: rgb(33, 65, 42);
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .btn,
 .btn-large,
@@ -32,7 +37,8 @@
 .btn-large,
 .btn-flat {
   font-size: 1rem;
-  outline: 0; }
+  outline: 0;
+}
 
 .btn,
 .btn-large,
@@ -44,7 +50,8 @@
   line-height: 36px;
   padding: 0 2rem;
   text-transform: uppercase;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 .z-depth-1,
 nav,
@@ -57,15 +64,18 @@ nav,
 .dropdown-content,
 .collapsible,
 .side-nav {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
-
+  box-sizing: inherit;
+}
 .file-field span {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .file-field input[type=file] {
   position: absolute;
@@ -79,10 +89,12 @@ nav,
   font-size: 20px;
   cursor: pointer;
   opacity: 0;
-  filter: alpha(opacity=0); }
+  filter: alpha(opacity=0);
+}
 
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
 button,
 input,
@@ -91,24 +103,28 @@ select,
 textarea {
   color: inherit;
   font: inherit;
-  margin: 0; }
+  margin: 0;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 .file-field .file-path-wrapper {
   overflow: hidden;
-  padding-left: 10px; }
-
+  padding-left: 10px;
+}
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 .file-field input.file-path {
-  width: 100%; }
+  width: 100%;
+}
 
 input:not([type]),
 input[type=text]:not(.browser-default),
@@ -135,10 +151,12 @@ textarea.materialize-textarea {
   padding: 0;
   box-shadow: none;
   box-sizing: content-box;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+}
 
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
 button,
 input,
@@ -147,9 +165,11 @@ select,
 textarea {
   color: inherit;
   font: inherit;
-  margin: 0; }
+  margin: 0;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}

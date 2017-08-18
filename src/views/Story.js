@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import RaisedButton from '../components/MaterializeRaisedButton';
 import TextField from 'material-ui/TextField';
-import '../styles/materialize-flow-text.css';
+import '../styles/responsive-text.css';
 class Story extends Component {
   state = {};
   render() {

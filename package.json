@@ -9,9 +9,8 @@
     "formidable": "^1.1.1",
     "gh-pages": "^1.0.0",
     "material-ui": "^0.18.7",
-    "multer": "^1.3.0",
-    "nightmare-upload": "^0.1.1",
     "node-fetch": "^1.7.2",
+    "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
     "path": "^0.12.7",
     "react": "^15.6.1",
@@ -26,17 +25,23 @@
   "scripts": {
     "start-react": "react-scripts start",
     "start-server": "nodemon server.js -w server.js",
-    "start": "npm-run-all -p start-react start-server",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start": "npm-run-all -p watch-css start-react start-server",
     "server": "nodemon server.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test-without-watch": "cross-env CI=true npm test",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "cross-env": "^5.0.5",
+    "husky": "^0.14.3",
     "nightmare": "^2.10.0",
+    "nightmare-upload": "^0.1.1",
+    "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.0.2"
   }
 }

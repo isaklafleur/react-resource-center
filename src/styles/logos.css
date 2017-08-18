@@ -1,0 +1,21 @@
+.tabs {
+  list-style-type: none;
+  text-align: center; }
+  .tabs .tab {
+    margin: 0 2px;
+    display: inline; }
+    .tabs .tab a {
+      padding: 8px; }
+
+.logo-card-container {
+  margin-bottom: 24px; }
+  .logo-card-container .img-container {
+    padding: 8px 8px 0 8px; }
+  .logo-card-container .card-actions {
+    border-top: 1px solid rgba(160, 160, 160, 0.2); }
+  .logo-card-container a {
+    width: 50%; }
+    .logo-card-container a span {
+      color: #ffb41f; }
+      .logo-card-container a span svg {
+        vertical-align: middle; }
