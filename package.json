@@ -2,16 +2,20 @@
   "name": "react-resource-center",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://isaklafleur.github.io/react-resource-center/",
   "dependencies": {
     "dotenv": "^4.0.0",
     "express": "^4.15.4",
     "formidable": "^1.1.1",
     "material-ui": "^0.18.7",
     "multer": "^1.3.0",
+    "nightmare-upload": "^0.1.1",
+    "node-fetch": "^1.7.2",
     "nodemon": "^1.11.0",
     "path": "^0.12.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-helmet": "^5.1.3",
     "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.11",
     "react-tap-event-plugin": "^2.0.1",
@@ -22,12 +26,15 @@
     "start-server": "nodemon server.js -w server.js",
     "start": "npm-run-all -p start-react start-server",
     "server": "nodemon server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "cross-env": "^5.0.5",
+    "gh-pages": "^1.0.0",
     "nightmare": "^2.10.0",
     "npm-run-all": "^4.0.2"
   }
