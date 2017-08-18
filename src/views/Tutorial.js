@@ -12,6 +12,7 @@ const Tutorial = () => {
           src="https://www.youtube.com/embed/A3Bl8VECdLo"
           frameborder="0"
           allowfullscreen
+          title="tutorial-video"
         />
       </div>
     </div>

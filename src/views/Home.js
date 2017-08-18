@@ -1,79 +1,50 @@
 import React, { Component } from 'react';
-import { Card, CardTitle, CardText } from 'material-ui/Card';
+import { GenericCard } from './../components/GenericCard';
+import { Helmet } from 'react-helmet';
+import '../styles/home.css';
+import '../styles/responsive-text.css';
 
 class Home extends Component {
   state = {};
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col s12 m4">
-            <Card>
-              <CardTitle title="Card title" subtitle="Card subtitle" />
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa.
-                Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc
-                lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id,
-                pellentesque lobortis odio.
-              </CardText>
-            </Card>
+      <div
+        className="container valign-wrapper"
+        style={{
+          marginBottom: 0,
+          minHeight: `calc(100vh - ${this.state.topCoord || '64'}px)`,
+        }}
+      >
+        <div className="row flow-text" style={{ display: 'flex', flexWrap: 'wrap' }}>
+          <Helmet>
+            <title>Home | Resource Center</title>
+          </Helmet>
+          <h2 style={{ flex: '1 100%' }}>Hello! How can MarCom help you?</h2>
+          <div className="col s12 m4 flex-div">
+            <GenericCard cardTitle="Brand Manual">Visual Brand Identity Manual</GenericCard>
           </div>
-          <div className="col s12 m4">
-            <Card>
-              <CardTitle title="Card title" subtitle="Card subtitle" />
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa.
-                Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc
-                lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id,
-                pellentesque lobortis odio.
-              </CardText>
-            </Card>
+          <div className="col s12 m4 flex-div">
+            <GenericCard cardTitle="Logos and Posters">
+              Official Franciscan University Logos and Poster Resources
+            </GenericCard>
           </div>
-          <div className="col s12 m4">
-            <Card>
-              <CardTitle title="Card title" subtitle="Card subtitle" />
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa.
-                Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc
-                lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id,
-                pellentesque lobortis odio.
-              </CardText>
-            </Card>
+          <div className="col s12 m4 flex-div">
+            <GenericCard cardTitle="Letterhead">
+              Franciscan University approved letterhead and letter writing guidelines
+            </GenericCard>
           </div>
-        </div>
-        <div className="row">
-          <div className="col s12 m4">
-            <Card>
-              <CardTitle title="Card title" subtitle="Card subtitle" />
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa.
-                Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc
-                lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id,
-                pellentesque lobortis odio.
-              </CardText>
-            </Card>
+          <div className="col s12 m4 flex-div">
+            <GenericCard cardTitle="Suggest a Story">Help us share your news.</GenericCard>
           </div>
-          <div className="col s12 m4">
-            <Card>
-              <CardTitle title="Card title" subtitle="Card subtitle" />
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa.
-                Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc
-                lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id,
-                pellentesque lobortis odio.
-              </CardText>
-            </Card>
+          <div className="col s12 m4 flex-div">
+            <GenericCard cardTitle="Service Request Form">
+              Let us know what you need, and we will get started on it as soon as we can.
+            </GenericCard>
           </div>
-          <div className="col s12 m4">
-            <Card>
-              <CardTitle title="Card title" subtitle="Card subtitle" />
-              <CardText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis pretium massa.
-                Aliquam erat volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc
-                lacinia auctor quam sed pellentesque. Aliquam dui mauris, mattis quis lacus id,
-                pellentesque lobortis odio.
-              </CardText>
-            </Card>
+          <div className="col s12 m4 flex-div">
+            <GenericCard cardTitle="Powerpoint">
+              Official Franciscan University Powerpoint temlate
+            </GenericCard>
           </div>
         </div>
       </div>

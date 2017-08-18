@@ -13,7 +13,7 @@ import customTheme from './components/customTheme';
 
 import Glossary from './views/Glossary';
 import Home from './views/Home';
-import LetterHead from './views/Letterhead';
+import Letterhead from './views/Letterhead';
 import Logos from './views/Logos';
 import LogosPosters from './views/LogosPosters';
 import PlanningGuide from './views/PlanningGuide';
@@ -39,7 +39,7 @@ class App extends Component {
               <Route path="/logos-posters" component={LogosPosters} />
               <Route path="/logos" component={Logos} />
               <Route path="/posters" component={Posters} />
-              <Route path="/letterhead" component={LetterHead} />
+              <Route path="/letterhead" component={Letterhead} />
               <Route path="/share-a-story" component={Story} />
               <Route path="/planning-guide" component={PlanningGuide} />
               <Route path="/services" component={Services} />
